@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# Millisecond Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![pages-build-deployment](https://github.com/amanzanero/ms-clock/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/amanzanero/ms-clock/actions/workflows/pages/pages-build-deployment)
 
-Currently, two official plugins are available:
+A simple millisecond accurate clock display.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a progressive web app (PWA) that can be installed on your device.
 
-## Expanding the ESLint configuration
+> Why did I make this?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I am really annoyed that iOS clock doesn't have a seconds display and wanted to whip something up to make it easier to see the time. I also have a few mechanical watches that I need to set regularly and wanted to make it easier to see the time.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
