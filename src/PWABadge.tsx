@@ -7,7 +7,6 @@ function PWABadge() {
   const period = 60 * 60 * 1000
 
   const {
-    
     needRefresh: [needRefresh, setNeedRefresh],
     updateServiceWorker,
   } = useRegisterSW({
